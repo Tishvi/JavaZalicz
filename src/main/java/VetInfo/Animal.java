@@ -17,7 +17,7 @@ public class Animal {
     public void print(){
         System.out.println("name: " + name);
         System.out.println("age: " + age);
-        System.out.println("sex: " + sex);
+        System.out.println("sex: " + getSexLiteral());
         System.out.println("race: " + race);
         System.out.println("weight: " + weight);
     }
@@ -40,6 +40,12 @@ public class Animal {
 
     public boolean isMale() {
         return sex;
+    }
+    public String getSexLiteral(){
+        if(sex == false){
+            return "female";
+        }
+        return "male";
     }
 
     public void setSex(boolean sex) {
