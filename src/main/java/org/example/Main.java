@@ -1,9 +1,11 @@
 package org.example;
 
-import VetInfo.Animal;
+
+import VetInfo.*;
 public class Main {
     public static void main(String[] args) {
-        Animal panjamnior = new Animal(4,32,true,"Ziemniak","Jamnik");
+        Animal panjamnior = new Dog(4,32,true,"Ziemniak","Jamnik");
         panjamnior.print();
+        panjamnior.printHealthStatus();
     }
 }

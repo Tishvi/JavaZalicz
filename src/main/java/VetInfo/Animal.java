@@ -21,6 +21,12 @@ public class Animal {
         System.out.println("race: " + race);
         System.out.println("weight: " + weight);
     }
+    public void printHealthStatus(){
+        System.out.println("Overweight: " + isOverweight());
+    }
+    public boolean isOverweight(){
+        return false;
+    }
 
     public int getAge() {
         return age;
