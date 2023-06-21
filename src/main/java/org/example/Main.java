@@ -7,5 +7,8 @@ public class Main {
         Animal panjamnior = new Dog(4,32,true,"Ziemniak","Jamnik");
         panjamnior.print();
         panjamnior.printHealthStatus();
+        Animal cat = new Cat (1,4,true,"Gatto","Domowy");
+        cat.print();
+        cat.printHealthStatus();
     }
 }
