@@ -5,6 +5,12 @@ public class Worker {
     private int age;
     private int salary;
 
+    /**
+     *
+     * @param name of the worker
+     * @param age of the worker
+     * @param salary of the worker
+     */
     public Worker(String name,int age,int salary){
         setName(name);
         setAge(age);

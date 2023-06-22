@@ -5,17 +5,39 @@ import VetInfo.*;
 
 import java.util.Vector;
 
+/**
+ * add to animal list to worker
+ */
 class Vet extends Worker{
      Vector<Animal> animals;
 
+    /**
+     * initializes the worker with an empty animal list
+     * @param name of the worker
+     * @param age of the worker
+     * @param salary of the worker
+     */
     public Vet(String name, int age, int salary) {
         super(name, age, salary);
         animals = new Vector<Animal>();
     }
+
+    /**
+     *
+     * @param name of the worker
+     * @param age of the worker
+     * @param salary of the worker
+     * @param animals animal list prescribed to worker
+     */
     public Vet(String name, int age, int salary,Vector<Animal> animals) {
         super(name, age, salary);
         this.animals = animals;
     }
+
+    /**
+     * prints workers personal information
+     * prints animal info from to list
+     */
     public void printAnimalInfo(){
         System.out.println("Woreks Personal Information: " + getName() + " " + getAge() + " " + getSalary());
         for (Animal anim : animals){
@@ -25,6 +47,12 @@ class Vet extends Worker{
     }
 }
 public class Main {
+    /**
+     *creates two animal list,
+     * populates them,
+     * designs to workers,
+     * prints correct animal list under correct worker.
+     */
     public static void main(String[] args) {
         Vector<Animal> animals1 = new Vector<Animal>();
         Vector<Animal> animals2 = new Vector<Animal>();
